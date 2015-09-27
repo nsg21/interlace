@@ -1,4 +1,4 @@
-Asynchronous interlaced update of a canvas element in javascript
+Non blocking interlaced update of a canvas element in javascript
 ================================================================
 
 Problem description
