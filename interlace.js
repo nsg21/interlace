@@ -43,7 +43,7 @@ function interlace(width,height,cbpixel,cbcomplete,ib) {
               // just completed smallest iteration step
               // time to exit
               interlace.RENDER=null;
-              if( 'function'==typeof(cbcomplete) ) cbcomplete();
+              if( 'function'==typeof(cbcomplete) ) cbcomplete(0);
               return;
             } else if(dx==dy) {
               // completed dx sized intermediate 
