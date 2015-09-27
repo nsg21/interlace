@@ -158,12 +158,12 @@ function interlacedUpdate(w,h,processpixel,lowres)
   },32)
 ```
 
-Parameter `lowres` representw the size of initial low resolution block and must
+Parameter `lowres` represents the size of initial low resolution block and must
 be a power of 2. At each pass the resolution doubles in x-axis direction or in
 y-axis direction and the process fills the pixels that should be included in
 this resolution.
 
-`processpixel` now takes 2 extra parameters, dx and sy, the size of a
+`processpixel` now takes 2 extra parameters, dx and dy, the size of a
 current low-res pixel block. They should only affect the size of a block
 displayed on a screen, not the color. The color must only depend on x and y.
 The reason for this is that once pixel (x,y) is processed, the drawing will not
@@ -248,4 +248,6 @@ Example page which uses this technique.
 
 http://nsg.upor.net/game/pm/otf.htm
 
-
+Even while not nearly as fast as shader-based WebGL implementation, this page
+remains reasonably responsive and allows user to navigate the space of
+parameters.
